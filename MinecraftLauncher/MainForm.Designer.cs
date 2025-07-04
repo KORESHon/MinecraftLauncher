@@ -85,7 +85,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 271);
+            this.ClientSize = new System.Drawing.Size(400, 300);
             this.Controls.Add(this.versionLabel);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.statusLabel);
