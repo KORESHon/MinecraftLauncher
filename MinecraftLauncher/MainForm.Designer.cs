@@ -37,54 +37,69 @@
             // 
             // serverNameLabel
             // 
-            this.serverNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.serverNameLabel.Location = new System.Drawing.Point(12, 20);
+            this.serverNameLabel.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.serverNameLabel.ForeColor = System.Drawing.Color.FromArgb(76, 175, 80);
+            this.serverNameLabel.Location = new System.Drawing.Point(20, 25);
             this.serverNameLabel.Name = "serverNameLabel";
-            this.serverNameLabel.Size = new System.Drawing.Size(360, 25);
+            this.serverNameLabel.Size = new System.Drawing.Size(360, 40);
             this.serverNameLabel.TabIndex = 0;
-            this.serverNameLabel.Text = "Сервер Minecraft";
+            this.serverNameLabel.Text = "🎮 MINECRAFT СЕРВЕР";
             this.serverNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(30, 120);
+            this.progressBar.BackColor = System.Drawing.Color.FromArgb(60, 60, 60);
+            this.progressBar.ForeColor = System.Drawing.Color.FromArgb(76, 175, 80);
+            this.progressBar.Location = new System.Drawing.Point(40, 140);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(320, 23);
+            this.progressBar.Size = new System.Drawing.Size(320, 20);
+            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar.TabIndex = 1;
             // 
             // statusLabel
             // 
-            this.statusLabel.Location = new System.Drawing.Point(30, 90);
+            this.statusLabel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.statusLabel.ForeColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            this.statusLabel.Location = new System.Drawing.Point(40, 110);
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(320, 20);
+            this.statusLabel.Size = new System.Drawing.Size(320, 25);
             this.statusLabel.TabIndex = 2;
             this.statusLabel.Text = "Готово к игре";
             this.statusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // playButton
             // 
-            this.playButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.playButton.Location = new System.Drawing.Point(150, 170);
+            this.playButton.BackColor = System.Drawing.Color.FromArgb(76, 175, 80);
+            this.playButton.FlatAppearance.BorderSize = 0;
+            this.playButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(56, 155, 60);
+            this.playButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(96, 195, 100);
+            this.playButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.playButton.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.playButton.ForeColor = System.Drawing.Color.White;
+            this.playButton.Location = new System.Drawing.Point(130, 190);
             this.playButton.Name = "playButton";
-            this.playButton.Size = new System.Drawing.Size(100, 35);
+            this.playButton.Size = new System.Drawing.Size(140, 50);
             this.playButton.TabIndex = 3;
-            this.playButton.Text = "Играть";
-            this.playButton.UseVisualStyleBackColor = true;
+            this.playButton.Text = "⚡ ИГРАТЬ";
+            this.playButton.UseVisualStyleBackColor = false;
             this.playButton.Click += new System.EventHandler(this.PlayButton_Click);
             // 
             // versionLabel
             // 
-            this.versionLabel.Location = new System.Drawing.Point(12, 240);
+            this.versionLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.versionLabel.ForeColor = System.Drawing.Color.FromArgb(150, 150, 150);
+            this.versionLabel.Location = new System.Drawing.Point(280, 265);
             this.versionLabel.Name = "versionLabel";
-            this.versionLabel.Size = new System.Drawing.Size(360, 15);
+            this.versionLabel.Size = new System.Drawing.Size(100, 20);
             this.versionLabel.TabIndex = 4;
-            this.versionLabel.Text = "Версия лаунчера: 1.0.0";
-            this.versionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.versionLabel.Text = "v1.0.0";
+            this.versionLabel.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(44, 44, 44);
             this.ClientSize = new System.Drawing.Size(400, 300);
             this.Controls.Add(this.versionLabel);
             this.Controls.Add(this.playButton);

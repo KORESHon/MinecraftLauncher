@@ -7,11 +7,6 @@ namespace MinecraftLauncher
 {
     public partial class MainForm : Form
     {
-        private Button playButton;
-        private ProgressBar progressBar;
-        private Label statusLabel;
-        private Label serverNameLabel;
-        private Label versionLabel;
         private GameUpdater updater;
         private MinecraftStarter starter;
         private ConfigManager configManager;
@@ -39,12 +34,12 @@ namespace MinecraftLauncher
         /// </summary>
         private void SetupForm()
         {
-            this.Text = "Minecraft Launcher";
-            this.Size = new System.Drawing.Size(400, 300);
-            this.FormBorderStyle = FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = true;
-            this.StartPosition = FormStartPosition.CenterScreen;
+            // Form properties are now set in Designer
+            // Just set initial status
+            statusLabel.Text = "Готово к игре";
+            progressBar.Value = 0;
+            serverNameLabel.Text = "🎮 MINECRAFT СЕРВЕР";
+            versionLabel.Text = "v1.0.0";
         }
 
         /// <summary>
